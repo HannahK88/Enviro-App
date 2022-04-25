@@ -1,0 +1,93 @@
+:root {
+  --main-text-color: #fff;
+  --main-bg-color: #eee;
+  --main-accent-color: #6a994e;
+
+  --navbar-bg-color: #fff;
+  --navbar-text-color: #333;
+  --nav-logo-color: rgb(0, 197, 26);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+  background-color: var(--main-bg-color);
+}
+
+.navbar {
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--navbar-bg-color);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.192);
+}
+
+.nav-item {
+  text-decoration: none;
+  color: var(--navbar-text-color);
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--nav-logo-color);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.page-wrapper {
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.result-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  gap: 30px;
+}
+
+.result-card {
+  background-color: var(--main-accent-color);
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-color);
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.103);
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 20px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.result-card:hover {
+  transform: translateY(-8px);
+}
