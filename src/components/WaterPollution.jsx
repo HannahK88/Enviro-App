@@ -2,7 +2,7 @@ import React from 'react'
 
 const WaterPollution = () => {
   return (
-    <div>WaterPollution</div>
+    <div>HEY HANNIE</div>
   )
 }
 
