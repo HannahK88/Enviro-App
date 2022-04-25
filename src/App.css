@@ -35,6 +35,16 @@ body {
   color: var(--navbar-text-color);
   margin: 10px;
   text-transform: uppercase;
+  transition: all .3s ease;
+}
+
+.nav-item:hover {
+  color: var(--main-accent-color);
+}
+
+.nav-item:active,
+.nav-item:focus {
+  color: var(--main-accent-color);
 }
 
 .logo {
@@ -54,7 +64,6 @@ body {
 
 .input-container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
@@ -90,4 +99,54 @@ body {
 
 .result-card:hover {
   transform: translateY(-8px);
+}
+
+.facts-container {
+  margin-top: 20px;
+  padding: 20px;
+  width: 430px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.139);
+}
+
+.facts-item {
+  margin: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  border: none;
+  border: 1px solid var(--main-accent-color);
+  border-radius: 4px;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+input:active,
+input:focus {
+  outline: none;
+}
+
+.go-btn {
+  color: var(--main-accent-color); 
+  font-size: 25px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+
+.go-btn:hover {
+  transform: rotate(360deg);
+}
+
+::placeholder {
+  text-align: center;
 }
